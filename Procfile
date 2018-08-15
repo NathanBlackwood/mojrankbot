@@ -1,1 +1,1 @@
-Worker: node .\ru
+Worker: node .\run
