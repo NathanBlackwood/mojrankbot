@@ -1,1 +1,1 @@
-Worker: node .\run
+Worker: node .\run.js
