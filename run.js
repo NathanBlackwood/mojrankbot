@@ -6,16 +6,17 @@ const trello = require("trello");
 const rbx = require("roblox-js");
 
     //userinterface -- touch this
-    var target = "EthiopianChild3";
+    var targetName = "EthiopianChild3";
+    var targetId = "645346813";
     var Judge = "Kevin_Hodge";
     //end userinterface -- STOP TOUCHING
 
 
     //dont touch anything here
   if (true) {
-        t.addCard(target, "Added by: "+Judge, listID);
+        t.addCard(targetName+":"+targetId, "Added by: "+Judge, listID);
 
-        rbx.setRank(3788004, target, 1).then(function(response){
+        rbx.setRank(3788004, targetId, 1).then(function(response){
             console.log("response", response);
         })
   }
