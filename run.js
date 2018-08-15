@@ -7,10 +7,10 @@ const trello = require("trello");
 const rbx = require("roblox-js");
 
     //userinterface -- touch this
-    var targetName = "PLAYER NAME";
-    var targetId = "USER ID";
-    var Judge = "YOUR NAME";
-    var due = new Date("January 1, 2018 00:00:00"); //Use full name for month. 
+    var targetName = "EthiopianChild3";
+    var targetId = "645346813";
+    var Judge = "Kevin_Hodge";
+    var due = new Date("August 16, 2018 00:45:00"); //Use full name for month. Please use your mind for this part :D 
     //end userinterface -- STOP TOUCHING
 
 
