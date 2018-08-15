@@ -1,0 +1,13 @@
+{
+  "name": "mojrankingbot",
+  "description": "A bot to rank individuals to HMPS",
+  "version": "0.0.1",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "trello": "0.9.0",
+    "request": "2.81.0"
+  }
+}
