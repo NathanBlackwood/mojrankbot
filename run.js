@@ -7,18 +7,30 @@ const trello = require("trello");
 const rbx = require("roblox-js");
 
     //userinterface -- touch this
-    var targetName = "EthiopianChild3";
-    var targetId = "645346813";
-    var Judge = "Kevin_Hodge";
-    var due = new Date("August 16, 2018 00:45:00"); //Use full name for month. Please use your mind for this part :D 
+    var targetName = "PLAYER NAME";
+    var targetId = "USER ID";
+    var Judge = "YOUR NAME";
+    var due = new Date("January 1, 2018 00:00:00"); //Use full name for month. 
     //end userinterface -- STOP TOUCHING
 
 
     //dont touch anything here
-  if (debounce === false) {
+  if (true) {
         t.addCard(targetName+":"+targetId, "Added by: Hon. "+Judge, listID).then(function(response){
             var cardId = response.id;
             t.addDueDateToCard(cardId, due);
+            if(Judge === "Kevin_Hodge"){
+                t.addMemberToCard(cardId, "55ce07c4b872211d74b6645b");
+            }
+            if (Judge === "NathanBlackwood") {
+                t.addMemberToCard(cardId, "5623e9939d6f01fa7b9fdb29");
+            }
+            if (Judge === "WilliamBlackwood") {
+                t.addMemberToCard(cardId, "547a2aa7ec9d04dc2c918040");
+            }
+            if (Judge === "AdrianPliniusCilo") {
+                t.addMemberToCard(cardId, "54106d30c52c3d827ea3a169");
+            }
         })
     
 
@@ -27,7 +39,6 @@ const rbx = require("roblox-js");
         rbx.setRank(3788004, targetId, 1).then(function(response){
             console.log("response", response);
         })
-	  debounce = true
   }
 	
 rbx.login(process.env.USER, process.env.PASS);
