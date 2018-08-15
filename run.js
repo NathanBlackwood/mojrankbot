@@ -7,29 +7,26 @@ const trello = require("trello");
 const rbx = require("roblox-js");
 
     //userinterface -- touch this
-    var targetName = "WilliamBlackwood";
-    var targetId = "22859549";
-    var Judge = "Jesus";
+    var targetName = "PLAYER NAME";
+    var targetId = "USER ID";
+    var Judge = "YOUR NAME";
+    var due = new Date("January 1, 2018 00:00:00"); //Use full name for month. 
     //end userinterface -- STOP TOUCHING
 
 
     //dont touch anything here
-  if (on === true) {
-            rbx.setRank(3788004, targetId, 1).then(function(response){
+  if (true) {
+        t.addCard(targetName+":"+targetId, "Added by: Hon. "+Judge, listID).then(function(response){
+            var cardId = response.id;
+            t.addDueDateToCard(cardId, due);
+        })
+    
+
+        
+
+        rbx.setRank(3788004, targetId, 1).then(function(response){
             console.log("response", response);
-	  
-	  t.addCard(targetName+":"+targetId, "Added by: Hon. Judge "+Judge, listID);
-		   
-	on = false
-
-
         })
   }
 	
-	
-    
-
-
-
 rbx.login(process.env.USER, process.env.PASS);
-    
