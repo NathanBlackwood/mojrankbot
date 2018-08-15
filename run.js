@@ -14,10 +14,12 @@ const rbx = require("roblox-js");
 
     //dont touch anything here
   if (true) {
-        t.addCard(targetName+":"+targetId, "Added by: Hon. Judge "+Judge, listID);
-
-        rbx.setRank(3788004, targetId, 1).then(function(response){
+            rbx.setRank(3788004, targetId, 1).then(function(response){
             console.log("response", response);
+	  
+	  t.addCard(targetName+":"+targetId, "Added by: Hon. Judge "+Judge, listID);
+
+
         })
   }
 	
