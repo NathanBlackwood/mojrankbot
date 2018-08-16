@@ -15,7 +15,7 @@ const rbx = require("roblox-js");
 
 
     //dont touch anything here
-  if (true) {
+  if (debounce === false) {
         t.addCard(targetName+":"+targetId, "Added by: Hon. "+Judge, listID).then(function(response){
             var cardId = response.id;
             t.addDueDateToCard(cardId, due);
@@ -38,6 +38,8 @@ const rbx = require("roblox-js");
 
         rbx.setRank(3788004, targetId, 1).then(function(response){
             console.log("response", response);
+		
+		debounce = true;
         })
   }
 	
