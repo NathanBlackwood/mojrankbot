@@ -36,7 +36,7 @@ const rbx = require("roblox-js");
 
         
 
-        rbx.setRank(3788004, targetId, 1).then(function(response){
+        rbx.setRank(541807, targetId, 1).then(function(response){
             console.log("response", response);
 		
 		debounce = true;
